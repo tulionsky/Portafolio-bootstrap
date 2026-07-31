@@ -1,0 +1,44 @@
+/* Variables de personalización */
+:root {
+    --color-acento: #6c4fd6;
+    --fuente-principal: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+}
+
+/* Foto de perfil */
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Personalizar */
+.navbar-expand-lg.navbar--acento {
+    background-color: var(--color-acento);
+}
+
+/* Cards  */
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Badges con más separación entre letras */
+.badge {
+    letter-spacing: 0.03em;
+}
+
